@@ -76,7 +76,7 @@ setUpdateInfo()
       <input className='form_field' {...register("password")}type="password" />
     </label>
     <label className="form_label">
-      <span className='form_field_name'>Contraseña</span>
+      <span className='form_field_name'>Birthday</span>
       <input className='form_field' {...register("birthday")}type="date" />
     </label>
     <button className='form_btn'>{updateInfo ? "Update" : "Create"}</button>
