@@ -27,8 +27,7 @@ ul{
 .btn_user{
     display: flex;
     width: fit-content;
-    position: absolute;
-    align-self:flex-end;
+    align-self:center;
    align-items: center;
     right: 2rem;
     padding: 7px 25px 7px 40px;
@@ -67,4 +66,22 @@ ul{
 
 .form_close{
     transform: scale(0);
+}
+
+@media screen and (min-width:530px) {
+  
+
+    .btn_user{
+        display: flex;
+        width: fit-content;
+        position: absolute;
+        align-self:flex-end;
+       align-items: center;
+        right: 2rem;
+        padding: 7px 25px 7px 40px;
+        color: white;
+        background-color: #4D517B;
+        border: none;
+        gap: 15px
+    }
 }
