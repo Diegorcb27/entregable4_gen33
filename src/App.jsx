@@ -32,7 +32,7 @@ function App() {
 
     <button className="btn_user" onClick={handleOpenForm}><span><i className='bx bx-plus-circle'></i></span> <span>CREAR NUEVO USUARIO</span></button>
 
-    <div className={`form_container ${isFormClose && "form_close"}`} >
+    <div className={`form_container ${isFormClose && "form_close"}`} > {/**si isFormClose es true se cierra porque se aplica la clase form_close */}
       <FormCard createUser={createUser} updateUser={updateUser} updateInfo={updateInfo} setUpdateInfo={setUpdateInfo} setIsFormClose={setIsFormClose}/>
     </div>
 

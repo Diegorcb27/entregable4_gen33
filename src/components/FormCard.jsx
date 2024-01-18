@@ -4,10 +4,10 @@ import "./styles/FormCard.css"
 
 const FormCard = ({createUser, updateUser, updateInfo, setUpdateInfo, setIsFormClose}) => {
 
-const{handleSubmit, reset, register}=useForm()
+const{handleSubmit, reset, register}=useForm() //hook para poder registrar la informacion de los input y crear los usuarios
 
 useEffect(() => {
-reset(updateInfo)
+reset(updateInfo) //cada vez que le demos al boton editar se reseteara todo el form con la informacion que se trajo de usercard
 }, [updateInfo])
 
 
@@ -16,7 +16,7 @@ const submit = (data) =>{
 
 
     if (updateInfo) {
-        updateUser(updateInfo.id, data)
+        updateUser(updateInfo.id, data)  //usamos la funcion de actualizar para pasarle la id de la informacion a actualizar
         reset({
           first_name: "",
           last_name: "",
@@ -30,14 +30,14 @@ const submit = (data) =>{
         createUser(data)
     }
 
-// reset({
-//     first_name: "",
-//     last_name: "",
-//     email: "",
-//     password: "",
-//     birthday: ""
+reset({
+    first_name: "",
+    last_name: "",
+    email: "",
+    password: "",
+    birthday: ""
 
-// })
+})
 setIsFormClose(true)
 }
 

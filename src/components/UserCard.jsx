@@ -2,9 +2,10 @@ import React from "react";
 import "./styles/UserCard.css"
 
 const UserCard = ({ user, deleteUser, setUpdateInfo, setIsFormClose }) => {
+
   const handleEdit = () => {
-    setUpdateInfo(user);
-    setIsFormClose(false);
+    setUpdateInfo(user);    //para pasarle informacion de los usuarios a app.jsx y luego pasarlo al form 
+    setIsFormClose(false);  //para cuando le de al boton edit se cambie a false y se abra el formulario
   };
 
   const handleDelete = () => {
