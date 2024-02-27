@@ -10,7 +10,7 @@ function App() {
   const[updateInfo, setUpdateInfo]=useState()
   const [isFormClose, setIsFormClose] = useState(true)
 
-  const baseUrl = "http://localhost:8080"
+  const baseUrl = "https://entregable-2-api-md3.onrender.com"
   
   const[users, getUser, createUser, deleteUser, updateUser]=useFetch(baseUrl)
 
