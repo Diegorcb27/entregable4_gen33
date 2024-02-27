@@ -10,7 +10,7 @@ function App() {
   const[updateInfo, setUpdateInfo]=useState()
   const [isFormClose, setIsFormClose] = useState(true)
 
-  const baseUrl = "https://users-crud.academlo.tech"
+  const baseUrl = "http://localhost:8080"
   
   const[users, getUser, createUser, deleteUser, updateUser]=useFetch(baseUrl)
 
